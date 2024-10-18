@@ -3,7 +3,7 @@ import requests
 
 # Função para realizar a conversão
 def converter(moeda_base, moeda_destino, valor):
-    url = f'https://v6.exchangerate-api.com/v6/363f4bd4dc6a73d2adde4775/pair/{moeda_base}/{moeda_destino}'
+    url = f'https://v6.exchangerate-api.com/v6/363f4bd4dc6a73d2adde4775/pair/{moeda_base}/{moeda_destino}' #Caso a chave tenha expirado, visite o site e pegue uma chave gratuita
     response = requests.get(url)
     
     if response.status_code == 200:
